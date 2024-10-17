@@ -1,11 +1,11 @@
 {
-  "name": "Green-Harvest-organic-vegetables",
+  "name": "green-harvest-organic-vegetables",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Green-Harvest-organic-vegetables/",
+    "build": "vite build --base=/green-harvest-organic-vegetables/",
     "preview": "vite preview"
   },
   "devDependencies": {
