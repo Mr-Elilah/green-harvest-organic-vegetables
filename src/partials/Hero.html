@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Hero.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-title-container">
+          <h1 class="hero-title">organic vegetables to your diet today!</h1>
+          <p class="hero-text">
+            Our expertly curated vegetable baskets are made with the freshest,
+            highest quality vegetables available. Fresh Harvest Box has got you
+            covered. Fresh, high-quality vegetables in expertly curated
+            vegetable baskets delivered to you.
+          </p>
+        </div>
+
+        <div class="heroimage-container">
+          <picture>
+            <source
+              srcset="
+                ../img/hero/herodecktop@1x.jpg 1x,
+                ../img/hero/herodecktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ../img/hero/herotab@1x.jpg 1x,
+                ../img/hero/herotab@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/hero/heromob@1x.jpg 1x,
+                ../img/hero/heromob@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+
+            <img
+              class="heroimage"
+              src="../img/hero/heromob@1x.jpg"
+              alt="Image of vegetables"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
