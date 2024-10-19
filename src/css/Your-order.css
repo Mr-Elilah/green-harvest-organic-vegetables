@@ -70,7 +70,7 @@
     .modal-form {
     max-width: 295px;
     height: 283px;
-    }
+    }    
     .modal-div-input {
     margin-bottom: 15px;
     }
@@ -78,7 +78,8 @@
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 30px;
     padding: 14px 220px 14px 16px;
-    max-width: 240px;
+    width: 100%;
+    max-width: 295px;
     height: 46px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -106,7 +107,8 @@
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 15px;
     padding: 14px 219px 59px 16px;
-    max-width: 240px;
+    width: 100%;
+    max-width: 295px;
     height: 91px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -129,7 +131,8 @@
     .modal-button {
     border-radius: 30px;
     padding: 16px 100px;
-    max-width: 240px;
+    width: 100%;
+    max-width: 295px;
     height: 50px;
     background-color: #576F35;
     border: none;
@@ -188,10 +191,6 @@
     color: #FBFBFB;
     text-decoration: none;
     }  
-    img {
-        max-width: 374px;
-        height: auto;
-    }
 }
 @media screen and (min-width: 375px) {
     .my-section-div {
