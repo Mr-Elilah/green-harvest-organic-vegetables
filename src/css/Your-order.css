@@ -6,11 +6,12 @@
     }
     .my-section {
     padding: 80px 0;
-    width: 374px;
+    min-width: 320px;
+    max-width: 374px;
     background-color: #7A3145;
     }
     .div-h-p {
-    width: 335px;
+    max-width: 335px;
     margin-bottom: 40px;
     }
     .my-h {
@@ -45,8 +46,7 @@
     .modal {
     border-radius: 30px;
     padding: 40px 20px;
-    width: 335px;
-    height: 533px;
+    max-width: 335px;
     background-color: #FBFBFB;
     }
     .modal-p {
@@ -68,9 +68,9 @@
     color: #576F35;
     }
     .modal-form {
-    width: 295px;
+    max-width: 295px;
     height: 283px;
-    }
+    }    
     .modal-div-input {
     margin-bottom: 15px;
     }
@@ -78,7 +78,8 @@
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 30px;
     padding: 14px 220px 14px 16px;
-    width: 295px;
+    width: 100%;
+    max-width: 295px;
     height: 46px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -106,7 +107,8 @@
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 15px;
     padding: 14px 219px 59px 16px;
-    width: 295px;
+    width: 100%;
+    max-width: 295px;
     height: 91px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -128,8 +130,9 @@
     }
     .modal-button {
     border-radius: 30px;
-    padding: 16px 129px;
-    width: 295px;
+    padding: 16px 100px;
+    width: 100%;
+    max-width: 295px;
     height: 50px;
     background-color: #576F35;
     border: none;
@@ -145,15 +148,16 @@
     .div-two {
     border-radius: 30px;
     padding: 40px 20px;
-    width: 335px;
-    height: 465px;
+    max-width: 335px;
     background-color: #576F35;
     }
     .div-two-image {
     border-radius: 15px;
-    width: 295px;
+    max-width: 295px;
     height: 273px;
     background: rgba(20, 20, 20, 0.3);
+    max-width: 100%;
+    overflow: hidden;
     }
     .div-two-p {
     margin-top: 20px;
@@ -167,7 +171,7 @@
     text-align: left;
     }
     .div-two-two {
-    width: 295px;
+    max-width: 295px;
     height: 60px;
     }
     .div-two-ul {
@@ -190,7 +194,7 @@
 }
 @media screen and (min-width: 375px) {
     .my-section-div {
-    padding: 0 20px;
+    padding: 0;
     margin: 0 auto;
     min-width: 375px;
     }
@@ -379,6 +383,9 @@
     }  
     }
     @media screen and (min-width: 768px) {
+    .my-section-div {
+    padding: 0 20px;
+    }
     .my-section {
     padding: 100px 0;
     }
