@@ -76,13 +76,10 @@ p {
     padding-bottom: 80px;
 }
 
-.container {
+.advertisement-container {
     min-width: 320px;
     max-width: 375px;
     margin: 0 auto;
-}
-
-.advertisement.container {
     padding: 0 9px;
 }
 
@@ -113,11 +110,8 @@ p {
         padding-bottom: 100px;
     }
 
-    .container {
+    .advertisement-container {
         max-width: 768px;
-    }
-
-    .advertisement.container {
         padding: 0 16px;
     }
 
@@ -136,11 +130,8 @@ p {
 
 @media only screen and (min-width: 1280px) {
 
-    .container {
+    .advertisement-container {
         max-width: 1280px;
-    }
-
-    .advertisement.container {
         padding: 0 100px;
     }
 
