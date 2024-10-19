@@ -1,0 +1,123 @@
+/* Vegetables Styles Mobile */
+
+.vegetables-section {
+  background: #7a3145;
+}
+
+.vegetables-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.vegetables-title {
+  max-width: 335px;
+  font-family: 'Inter Tight', sans-serif;
+  margin-bottom: 20px;
+}
+
+.vegetables-title-part {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.vegetables-text {
+  max-width: 335px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+
+.vegetables-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vegetables-item {
+  border-radius: 40px;
+  padding: 32px 26px;
+  max-width: 334px;
+  max-height: 379px;
+  background: #fbfbfb;
+}
+
+.vegetables-name {
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 1;
+  color: #7a3145;
+}
+
+.vegetables-price {
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+/* /Vegetables Styles Mobile */
+
+/* Vegetables Styles Tablet */
+
+@media screen and (min-width: 768px) {
+  .vegetables-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .vegetables-title {
+    max-width: 508px;
+    font-size: 64px;
+    line-height: 1;
+
+    margin-bottom: 50px;
+  }
+
+  .vegetables-text {
+    max-width: 626px;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 50px;
+  }
+
+  .vegetables-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 28px;
+  }
+
+  .vegetables-item {
+    padding: 32px 30px;
+    max-width: 342px;
+  }
+}
+
+/* /Vegetables Styles Tablet */
+
+/* Vegetables Styles Desktop */
+
+@media screen and (min-width: 1280px) {
+  .vegetables-title {
+    margin-bottom: 25px;
+  }
+
+  .vegetables-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 21px;
+  }
+
+  .vegetables-item {
+    padding: 32px;
+    max-width: 346px;
+  }
+}
+
+/* /Vegetables Styles Desktop */
