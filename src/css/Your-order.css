@@ -1,5 +1,5 @@
 @media screen and (min-width: 375px) {
-    .container {
+    .my-section-div {
     padding: 0 20px;
     margin: 0 auto;
     max-width: 375px;
@@ -80,7 +80,6 @@
     padding: 14px 220px 14px 16px;
     width: 295px;
     height: 46px;
-    
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -109,7 +108,6 @@
     padding: 14px 219px 59px 16px;
     width: 295px;
     height: 91px;
-    
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
@@ -136,7 +134,6 @@
     background-color: #576F35;
     border: none;
     cursor: pointer;
-    
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
@@ -192,9 +189,6 @@
     }  
     }
     @media screen and (min-width: 768px) {
-    .container {
-    max-width: 768px;
-    }
     .my-section {
     padding: 100px 0;
     }
@@ -272,9 +266,6 @@
     }
     }
     @media screen and (min-width: 1280px) {
-    .container {
-    max-width: 1280px;
-    }
     .my-section {
     display: flex;
     padding: 100px;
