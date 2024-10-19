@@ -1,19 +1,15 @@
 h1 {margin: 0;}
 
-body {
-    font-family: 'Inter Tight', sans-serif;
-    color: #FBFBFB;
-    background-color: #576F35;
-}
-
  .hero-container {
+    background-color: #576F35;
+    color: #FBFBFB;
     min-width: 320px;
     max-width: 375px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 45px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
  }
 
 .hero-title {
@@ -63,7 +59,7 @@ body {
         max-width: 768px;
         padding: 0 32px;
         padding-top: 50px;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
 
     .hero-title {
