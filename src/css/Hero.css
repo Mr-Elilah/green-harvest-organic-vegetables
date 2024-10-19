@@ -1,24 +1,20 @@
-h1, p {margin: 0;}
-img {display: block;}
-
+h1 {margin: 0;}
 
 body {
     font-family: 'Inter Tight', sans-serif;
     color: #FBFBFB;
     background-color: #576F35;
 }
+
  .hero-container {
     min-width: 320px;
     max-width: 375px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
- }
-
-.hero-title-container {
     padding-top: 45px;
     margin-bottom: 40px;
-}
+ }
 
 .hero-title {
     max-width: 100%;
@@ -114,11 +110,6 @@ body {
 
     .hero-container {
         max-width: 730px;
-        padding: 0;
-        margin-bottom: 0;  
-    }
-
-    .hero-title-container {
         padding-top: 238px;
         padding-left: 100px;
         padding-right: 28px;
