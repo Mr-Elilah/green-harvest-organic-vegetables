@@ -54,10 +54,15 @@
     max-width: 296px;
     color: #FBFBFB;
     text-align: left;
+    font-family: "Inter Tight", sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
-    .footer-slogan {max-width: 265px;}
+    .footer-slogan {
+        max-width: 265px;
+        font-size: 16px;
+        line-height: 125%;
+    }
 }
 
 .footer-nav-link {
