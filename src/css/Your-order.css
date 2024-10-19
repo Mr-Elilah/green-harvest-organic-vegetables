@@ -190,9 +190,9 @@
 }
 @media screen and (min-width: 375px) {
     .my-section-div {
-        padding: 0 20px;
+    padding: 0 20px;
     margin: 0 auto;
-    max-width: 375px;
+    min-width: 375px;
     }
     .my-section {
     padding: 80px 20px;
