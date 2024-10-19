@@ -27,20 +27,21 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    /* background-color: red; */
-    background: transparent;
+    background-color: red;
+    /* background: transparent; */
     /* background: rgba(0, 0, 0, 0); */
     height: 52px;
 }
-/* 
+
 @media screen and (max-width: 375px) {
     .container {
-        width: 100%;
+        min-width: 320px;
+        max-width: 375px;
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
     }
-} */
+}
 
 @media screen and (min-width: 375px) {
     .container-header {
