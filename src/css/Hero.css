@@ -8,7 +8,7 @@ h1 {margin: 0;}
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 45px;
+    padding-top: 100px;
     padding-bottom: 40px;
  }
 
@@ -58,7 +58,7 @@ h1 {margin: 0;}
     .hero-container {
         max-width: 768px;
         padding: 0 32px;
-        padding-top: 50px;
+        padding-top: 122px;
         padding-bottom: 50px;
     }
 
