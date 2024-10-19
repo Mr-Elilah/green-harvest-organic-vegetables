@@ -1,3 +1,8 @@
+body {
+  font-family: 'Inter Tight', sans-serif;
+
+  background-color: #ffffff;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
