@@ -8,19 +8,14 @@ body {
     background-color: #576F35;
 }
 
-.container {
-    min-width: 320px;
-    max-width: 374px;
-    margin: 0 auto;
-}
 
 .hero-title-container {
     padding-top: 45px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-bottom: 40px;
 }
 
 .hero-title {
+    max-width: 100%;
     font-weight: 600;
     font-size: 48px;
     line-height: 1;
@@ -30,35 +25,51 @@ body {
 }
 
 .hero-text {
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
-    margin-bottom: 40px;
+    color: #FBFBFB;
+    text-align: left;
+    
 }
+.heroimage-background {
+    display: block;
+    width: 375px;
+    height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+@media screen and (max-resolution: 191dpi) {
+    .heroimage-background {
+        background-image: url(../img/hero/heromob@1x.jpg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .heroimage-background {background-image: url(../img/hero/heromob@2x.jpg);}}
 
 .heroimage {
     max-width: 100%;
     height: auto;
 }
+   
+/*==========TABLET============*/
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-
-    .hero-title-container {
-        padding-left: 52px;
-        padding-right: 32px;
-    }
-
+    
     .hero-title-container {
         padding-top: 50px;
-        padding-left: 32px;
-        padding-right: 32px;
+        margin-bottom: 50px;
     }
 
     .hero-title {
-        max-width: 100%;
+        max-width: 704px;
         margin-bottom: 25px;
         font-size: 76px;
         line-height: 1;
@@ -66,17 +77,34 @@ body {
 
     .hero-text {
         max-width: 603px;
-        margin-bottom: 50px;
         font-size: 16px;
         line-height: 1.25;
     }
+
+    .heroimage-background {
+        width: 768px;
+        height: 539px;
+    }
+
+
+@media screen and (max-resolution: 191dpi) {
+    .heroimage-background {
+        background-image: url(../img/hero/herotab@1x.jpg);
+    }
 }
 
-@media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    } 
+@media screen and (min-resolution: 192dpi) {
+    .heroimage-background {
+        background-image: url(../img/hero/herotab@2x.jpg);
+    }
+}
+    
+}
 
+/*=========== Desktop=========*/
+
+@media screen and (min-width: 1280px) {
+    
     .hero-container {
         display: flex;
         justify-content: space-between;
@@ -96,6 +124,27 @@ body {
 
     .hero-text {
         max-width: 472px;
-        margin-bottom: 0;
     }
+    .heroimage-background {display: none;}
+    .heroimage-container {
+        width: 650px;
+        height: 800px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media screen and (max-resolution: 191dpi) {
+    .heroimage-container {
+        background-image: url(../img/hero/herodecktop@1x.jpg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .heroimage-container {
+        background-image: url(../img/hero/herodecktop@2x.jpg);
+    }
+}
 }
