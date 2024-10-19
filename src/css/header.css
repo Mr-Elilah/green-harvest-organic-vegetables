@@ -1,10 +1,18 @@
-.header {
-    position: absolute;
+.header-window {
+    position: relative;
     top: 0;
     left: 0;
     z-index: 666;
 
 }
+.container-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 669;
+
+}
+
 
 .mobile-menu {
     margin-left: 0;
