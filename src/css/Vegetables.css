@@ -95,7 +95,7 @@
 
   .vegetables-item {
     padding: 32px 30px;
-    max-width: 342px;
+    width: calc((100% - 20px) / 2);
   }
 }
 
@@ -116,7 +116,7 @@
 
   .vegetables-item {
     padding: 32px;
-    max-width: 346px;
+    width: calc((100% - 42px) / 3);
   }
 }
 
