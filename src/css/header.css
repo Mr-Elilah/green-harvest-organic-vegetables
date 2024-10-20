@@ -1,15 +1,16 @@
+
 body {
     position: relative;
 }
-
-
-.header {
+ 
+.container-header {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     z-index: 666;
+    transform: translateX(-50%);
 
-}
+} 
 
 
 .mobile-menu {
@@ -25,9 +26,9 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    /* background-color: red; */
+    background-color: red;
     /* background: transparent; */
-    background: rgba(0, 0, 0, 0);
+    /* background: rgba(0, 0, 0, 0); */
     height: 52px;
 }
 
