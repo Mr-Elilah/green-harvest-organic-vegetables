@@ -26,8 +26,8 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: red;
-    /* background: transparent; */
+    /* background-color: red; */
+    background: transparent;
     /* background: rgba(0, 0, 0, 0); */
     height: 52px;
 }
