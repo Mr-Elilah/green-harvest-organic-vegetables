@@ -1,13 +1,14 @@
+
 body {
   position: relative;
 }
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 666;
-}
+.container-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 666;
+    transform: translateX(-50%);
+} 
 
 .mobile-menu {
   margin-left: 0;
@@ -15,6 +16,7 @@ body {
 }
 
 .container-header {
+
   width: 100%;
   margin-left: auto;
   margin-right: auto;
