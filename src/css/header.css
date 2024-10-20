@@ -1,331 +1,326 @@
 body {
-    position: relative;
+  position: relative;
 }
-
 
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 666;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 666;
 }
 
-
 .mobile-menu {
-    margin-left: 0;
-    padding: 0;
+  margin-left: 0;
+  padding: 0;
 }
 
 .container-header {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    /* background-color: red; */
-    /* background: transparent; */
-    background: rgba(0, 0, 0, 0);
-    height: 52px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* background-color: red; */
+  /* background: transparent; */
+  background: rgba(0, 0, 0, 0);
+  height: 52px;
 }
 
 @media screen and (max-width: 375px) {
-    .container-header {
-        min-width: 320px;
-        max-width: 375px;
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .container-header {
+    min-width: 320px;
+    max-width: 375px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 375px) {
-    .container-header {
-        width: 375px;
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .container-header {
+    width: 375px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .tablet-menu-btn {
+  .tablet-menu-btn {
     display: none;
-    }
+  }
 
-    .item {
+  .item {
     width: 168px;
     height: 16px;
-} 
+  }
 
-    .mobile-menu-svg {
-        width: 32px;
-        height: 32px;
-    }
+  .mobile-menu-svg {
+    width: 32px;
+    height: 32px;
+  }
 
-    .shop-close-icon {
-        width: 32px;
-        height: 32px;
-    }
+  .shop-close-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container-header {
-        width: 768px;
-        padding: 32px;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
+  .container-header {
+    width: 768px;
+    padding: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .item {
-        width: 194px;
-        height: 18px;
-    }
-            
-    .mobile-menu-svg {
-        width: 40px;
-        height: 40px;
-    }
-    }
+  .item {
+    width: 194px;
+    height: 18px;
+  }
+
+  .mobile-menu-svg {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 @media screen and (min-width: 1280px) {
-    .container-header {
-        width: 1280px;
-        padding-left: 100px;
-            padding-right: 100px;
-            /* margin-top: 32px; */
-            /* margin-bottom: 32px; */
-}
-}
-
-@media screen and (min-width: 1280px) { 
-.mobile-menu-btn {
-        display: none;
-}
+  .container-header {
+    width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+    /* margin-top: 32px; */
+    /* margin-bottom: 32px; */
+  }
 }
 
+@media screen and (min-width: 1280px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
 .mobile-menu-btn {
-    stroke: #fbfbfb;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
+  stroke: #fbfbfb;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
-    .shop-close-btn {
+  .shop-close-btn {
     top: 32px;
     right: 32px;
-    }
+  }
 
-    .shop-close-icon {
-        width: 40px;
-        height: 40px;
-    }
+  .shop-close-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .header-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
 .header-nav {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .link-menu {
-        border: 1px solid rgba(251, 251, 251, 0.4);
-        border-radius: 12px;
-        padding: 12px;
-        margin-top: 12px;
-        width: 101px;
-        height: 44px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 125%;
-        letter-spacing: -0.02em;
-        text-align: center;
-        color: #fbfbfb;
-        text-decoration: none;
-    }
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 12px;
+  width: 101px;
+  height: 44px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  text-decoration: none;
+}
 
 .link-menu-btn {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 111%;
-        letter-spacing: -0.01em;
-        text-transform: uppercase;
-        color: #fbfbfb;
-        text-decoration: none;
-        border-radius: 30px;
-        padding: 16px 32px;
-        width: 157px;
-        height: 52px;
-        background: #7a3145;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 16px 32px;
+  width: 157px;
+  height: 52px;
+  background: #7a3145;
 }
 
 @media screen and (max-width: 1280px) {
-    .header-menu {
+  .header-menu {
     display: none;
-    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .mobile-menu-btn {
+  .mobile-menu-btn {
     display: none;
-    }
+  }
 }
 
 .item {
-    fill: #fbfbfb;
+  fill: #fbfbfb;
 }
 
 .link-menu-btn:focus,
 .link-menu-btn:hover {
-    background-color: #622133;
+  background-color: #622133;
 }
 
 /* -----------------------------shop-window------------------------------- */
 
 .shop-window {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999999;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .shop-window.is-open {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .shop {
-    position: relative;
-    width: 375px;
-    height: 100%;
-    max-width: 812px;
-    overflow: auto;
-    background-color: #7a3145;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: relative;
+  width: 375px;
+  height: 100%;
+  max-width: 812px;
+  overflow: auto;
+  background-color: #7a3145;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .shop-close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    stroke-width: 4px;
-    stroke: #fbfbfb;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  stroke-width: 4px;
+  stroke: #fbfbfb;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
 }
 
 .shop-close-btn:hover,
 .shop-close-btn:focus {
-stroke: #4d5ae5;
+  stroke: #4d5ae5;
 }
 
 .shop-btn {
-    position: absolute;
-    bottom: 40px;
+  position: absolute;
+  bottom: 40px;
 }
 
 .shop-link-menu-btn {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
-    border: 1px solid rgba(251, 251, 251, 0.2);
-    border-radius: 30px;
-    text-decoration: none;
-    padding: 16px 41px;
-    width: 155px;
-    height: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 16px 41px;
+  width: 155px;
+  height: 50px;
 }
 
 .shop-btn :hover,
 .shop-btn :focus {
-    color: #7a3145;
-    outline: none;
-    background-color: #fbfbfb;
+  color: #7a3145;
+  outline: none;
+  background-color: #fbfbfb;
 }
 
 .header-menu-tablet {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .shop-link-menu {
-    border: 1px solid rgba(251, 251, 251, 0.4);
-    border-radius: 12px;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 12px 16px;
-    width: 115px;
-    height: 42px;
-    line-height: 129%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    text-decoration: none;
-    color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 16px;
+  width: 115px;
+  height: 42px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-decoration: none;
+  color: #fbfbfb;
 }
 
 @media screen and (min-width: 768px) {
-    .shop-window {
-        justify-content: end;
-    }
+  .shop-window {
+    justify-content: end;
+  }
 
-    .shop {
-        width: 351px;
-        max-height: 1024px;
-    }
+  .shop {
+    min-width: 351px;
+    min-height: 1024px;
+  }
 
-    .shop-btn {
-        bottom: 50px;
-    }
+  .shop-btn {
+    bottom: 50px;
+  }
 
-    .shop-link-menu-btn {
-        font-size: 18px;
-        line-height: 111%;
-        padding: 16px 32px;
-        width: 157px;
-        height: 52px;
-    }
+  .shop-link-menu-btn {
+    font-size: 18px;
+    line-height: 111%;
+    padding: 16px 32px;
+    width: 157px;
+    height: 52px;
+  }
 
-    .shop-link-menu {
-        padding: 12px;
-        width: 114px;
-        height: 44px;
-        font-size: 16px;
-        line-height: 125%;
-    }
-
+  .shop-link-menu {
+    padding: 12px;
+    width: 114px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 .shop-link-menu:hover,
 .shop-link-menu:focus {
-    color: #7a3145;
-    background: #fbfbfb;
-    outline: none;
+  color: #7a3145;
+  background: #fbfbfb;
+  outline: none;
 }
