@@ -71,7 +71,6 @@
 
 @media screen and (min-width: 768px) {
   .vegetables-wrapper {
-    max-width: 704px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -92,7 +91,6 @@
   }
 
   .vegetables-list {
-    justify-content: center;
     column-gap: 20px;
     row-gap: 28px;
   }
@@ -112,10 +110,6 @@
 /* Vegetables Styles Desktop */
 
 @media screen and (min-width: 1280px) {
-  .vegetables-wrapper {
-    max-width: 1080px;
-  }
-
   .vegetables-title {
     margin-bottom: 25px;
   }
