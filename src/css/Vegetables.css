@@ -61,12 +61,17 @@
   color: #141414;
 }
 
+.vegetables-photo {
+  padding: 15px;
+}
+
 /* /Vegetables Styles Mobile */
 
 /* Vegetables Styles Tablet */
 
 @media screen and (min-width: 768px) {
   .vegetables-wrapper {
+    max-width: 704px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -87,7 +92,6 @@
   }
 
   .vegetables-list {
-    display: flex;
     justify-content: center;
     column-gap: 20px;
     row-gap: 28px;
@@ -97,6 +101,10 @@
     padding: 32px 30px;
     width: calc((100% - 20px) / 2);
   }
+
+  .vegetables-photo {
+    padding: 0;
+  }
 }
 
 /* /Vegetables Styles Tablet */
@@ -104,13 +112,15 @@
 /* Vegetables Styles Desktop */
 
 @media screen and (min-width: 1280px) {
+  .vegetables-wrapper {
+    max-width: 1080px;
+  }
+
   .vegetables-title {
     margin-bottom: 25px;
   }
 
   .vegetables-list {
-    display: flex;
-    justify-content: center;
     column-gap: 21px;
   }
 
