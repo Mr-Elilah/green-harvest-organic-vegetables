@@ -2,6 +2,7 @@ body {
   font-family: 'Inter Tight', sans-serif;
 
   background-color: #ffffff;
+  position: relative;
 }
 .visually-hidden {
   position: absolute;
