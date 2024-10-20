@@ -1,15 +1,13 @@
-.header-window {
+body {
     position: relative;
-    top: 0;
-    left: 0;
-    z-index: 666;
-
 }
-.container-window {
+
+
+.header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 669;
+    z-index: 666;
 
 }
 
@@ -27,14 +25,14 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: red;
+    /* background-color: red; */
     /* background: transparent; */
-    /* background: rgba(0, 0, 0, 0); */
+    background: rgba(0, 0, 0, 0);
     height: 52px;
 }
 
 @media screen and (max-width: 375px) {
-    .container {
+    .container-header {
         min-width: 320px;
         max-width: 375px;
         padding: 20px;
