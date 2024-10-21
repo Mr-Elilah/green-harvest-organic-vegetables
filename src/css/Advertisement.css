@@ -88,19 +88,18 @@ p {
   background-image: url(../img/advertisement/adv-img-mobile.jpg);
   background-repeat: no-repeat;
   background-size: 100% 102px;
+  padding-top: 3px;
   padding-left: 10px;
 }
 
-
-
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
-
-  .discount-title {
-    background-color: #576f35;
-  }
 
   .advertisement-title {
     background-image: url(../img/advertisement/adv-img-mobile@2x.jpg);
+  }
+
+  .discount-title {
+    background-color: #576f35;
   }
 
 }
@@ -130,13 +129,12 @@ p {
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
 
+  .advertisement-title {
+    background-image: url(../img/advertisement/adv-img-tablet@2x.jpg);
+  }
 
   .discount-title {
     background-color: #576f35;
-  }
-
-  .advertisement-title {
-    background-image: url(../img/advertisement/adv-img-tablet@2x.jpg);
   }
 
 }
@@ -153,11 +151,8 @@ p {
     width: 1054px;
     font-size: 76px;
     line-height: 1.05;
-    background-image: url(../img/advertisement/adv-img-desktop.jpg);
-    background-size: 808px 86px;
-    padding-top: 0px;
-    padding-left: 0px;
-
+    background-image: none;
+    padding-left: 13px;
   }
 
   .discount-title {
@@ -165,17 +160,8 @@ p {
     text-align: center;
     width: 808px;
     margin-right: 7px;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
-
-  .discount-title {
+    padding-left: 13px;
     background-color: #576f35;
-  }
-
-  .advertisement-title {
-    background-image: url(../img/advertisement/adv-img-desktop@2x.jpg);
   }
 }
 
