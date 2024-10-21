@@ -188,7 +188,7 @@ body {
   fill: #fbfbfb;
 }
 
-.link-menu-btn:focus,
+.link-menu-btn:active,
 .link-menu-btn:hover {
   background-color: #622133;
 }
@@ -296,20 +296,24 @@ body {
   line-height: 129%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #fbfbfb;
+  color: #7a3145;
+  
+  /* color: #fbfbfb; */
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 30px;
   text-decoration: none;
   padding: 16px 41px;
   width: 155px;
   height: 50px;
+  background-color: #fbfbfb;
 }
 
 .shop-btn :hover,
 .shop-btn :focus {
-  color: #7a3145;
+  /* color: #7a3145; */
   outline: none;
-  background-color: #fbfbfb;
+  /* background-color: #fbfbfb; */
+  color: rgba(122, 49, 69, 0.7);;
 }
 
 .header-menu-tablet {
