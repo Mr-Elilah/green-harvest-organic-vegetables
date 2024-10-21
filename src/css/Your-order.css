@@ -1,8 +1,207 @@
-@media screen and (min-width: 375px) {
-    .container {
+@media screen and (max-width: 374px) {
+    .my-section-div {
     padding: 0 20px;
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 374px;
+    }
+    .my-section {
+    padding: 80px 0;
+    min-width: 320px;
+    max-width: 374px;
+    background-color: #7A3145;
+    }
+    .div-h-p {
+    max-width: 335px;
+    margin-bottom: 40px;
+    }
+    .my-h {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 104%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #FBFBFB;
+    margin-top: 0;
+    margin-bottom: 29px;
+    }
+    .my-harvest {
+    color: rgba(251, 251, 251, 0.3);
+    }
+    .my-p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    color: #FBFBFB;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: left;
+    }
+    .modal-and-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+    .modal {
+    border-radius: 30px;
+    padding: 40px 20px;
+    max-width: 335px;
+    background-color: #FBFBFB;
+    }
+    .modal-p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: left;
+    }
+    .modal-a {
+    color: #7A3145;
+    }
+    .modal-a-two {
+    color: #576F35;
+    }
+    .modal-form {
+    max-width: 295px;
+    height: 283px;
+    }    
+    .modal-div-input {
+    margin-bottom: 15px;
+    }
+    input::placeholder {
+    color: #141414;   
+    }
+    .modal-input {
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 30px;
+    padding: 14px 160px 14px 16px;
+    width: 100%;
+    max-width: 295px;
+    height: 46px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #141414;
+    transition: border-color 0.3s;
+    }
+    .modal-input:hover,
+    .modal-input:active,
+    .modal-input:focus {
+    border-color: #7A3145;
+    outline: none;
+    }
+    .modal-input:focus:valid,
+    .modal-input:valid:focus {
+    border-color: #3CBC81;
+    }
+    .modal-input:invalid  {
+    border-color: #E74A3B;
+    }
+    .modal-input-two {
+    padding: 14px 185px 14px 16px;
+    }
+    .modal-textarea {
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 15px;
+    padding: 14px 100px 59px 16px;
+    width: 100%;
+    max-width: 295px;
+    height: 91px;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #141414;
+    }
+    .modal-textarea:hover,
+    .modal-textarea:active,
+    .modal-textarea:focus {
+    border-color: #7A3145;  
+    outline: none;
+    }
+    .modal-div-textarea {
+    margin-bottom: 20px;
+    }
+    .modal-button {
+    border-radius: 30px;
+    padding: 16px 100px;
+    width: 100%;
+    max-width: 295px;
+    height: 50px;
+    background-color: #576F35;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #FBFBFB;
+    }
+    .div-two {
+    border-radius: 30px;
+    padding: 40px 20px;
+    max-width: 335px;
+    background-color: #576F35;
+    }
+    .div-two-image {
+    border-radius: 15px;
+    max-width: 295px;
+    height: 273px;
+    background: rgba(20, 20, 20, 0.3);
+    max-width: 100%;
+    overflow: hidden;
+    }
+    .div-two-p {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+    text-align: left;
+    }
+    .div-two-two {
+    max-width: 295px;
+    height: 60px;
+    }
+    .div-two-ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    .div-two-li {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: -0.01em;
+    color: #FBFBFB;
+    text-decoration: none;
+    }  
+}
+@media screen and (min-width: 375px) {
+    .my-section-div {
+    padding: 0;
+    margin: 0 auto;
+    min-width: 375px;
     }
     .my-section {
     padding: 80px 20px;
@@ -74,13 +273,16 @@
     .modal-div-input {
     margin-bottom: 15px;
     }
+    input::placeholder {
+    color: #141414;   
+    }
     .modal-input {
+    text-align: left;
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 30px;
     padding: 14px 220px 14px 16px;
     width: 295px;
     height: 46px;
-    
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -103,19 +305,21 @@
     .modal-input:invalid  {
     border-color: #E74A3B;
     }
+    .modal-input-two {
+    padding: 14px 220px 14px 16px;
+    text-align: left;
+    }
     .modal-textarea {
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 15px;
-    padding: 14px 219px 59px 16px;
+    padding: 14px 100px 59px 16px;
     width: 295px;
     height: 91px;
-    
-    font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 125%;
+    font-size: 14px;
+    line-height: 129%;
     letter-spacing: -0.02em;
-    text-align: center;
+    text-align: left;
     color: #141414;
     overflow: hidden;
     }
@@ -136,7 +340,6 @@
     background-color: #576F35;
     border: none;
     cursor: pointer;
-    
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
@@ -192,8 +395,8 @@
     }  
     }
     @media screen and (min-width: 768px) {
-    .container {
-    max-width: 768px;
+    .my-section-div {
+    padding: 0 20px;
     }
     .my-section {
     padding: 100px 0;
@@ -227,6 +430,7 @@
     margin-bottom: 50px;
     }
     .modal-input {
+    text-align: left;
     border-radius: 30px;
     padding: 16px 345px 16px 16px;
     width: 428px;
@@ -272,9 +476,6 @@
     }
     }
     @media screen and (min-width: 1280px) {
-    .container {
-    max-width: 1280px;
-    }
     .my-section {
     display: flex;
     padding: 100px;
@@ -305,6 +506,9 @@
     width: 529px;
     height: 534px;
     margin-bottom: 0;
+    }
+    .modal-p {
+    width: 428px;
     }
     .modal-input {
     padding: 16px 346px 16px 16px;

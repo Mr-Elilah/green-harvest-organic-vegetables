@@ -26,6 +26,7 @@
   font-size: 14px;
   line-height: 1.25;
   color: #141414;
+  text-align: left;
 }
 
 .list-section-reviews {
@@ -36,7 +37,7 @@
   border: 1px solid rgba(122, 49, 69, 0.3);
   border-radius: 24px;
   padding: 20px 16px 38px 16px;
-  width: 335px;
+  max-width: 335px;
   height: 238px;
   flex-direction: column;
 }
@@ -95,7 +96,7 @@
   .item-section-reviews {
     border-radius: 24px;
     padding: 20px 20px 20px 20px;
-    width: 343px;
+    max-width: 343px;
     height: 258px;
   }
 
@@ -134,8 +135,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .plus.container {
-    padding: 0 100px;
+  .container.reviews-container {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .list-section-reviews {
@@ -157,7 +159,7 @@
 
   .item-section-reviews {
     display: block;
-    width: 343px;
+    max-width: 343px;
     height: 258px;
   }
 
