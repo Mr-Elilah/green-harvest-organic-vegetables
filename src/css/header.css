@@ -124,7 +124,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  /* gap: 8px; */
+  
+}
+
+.header-menu-link:nth-child(1),
+.header-menu-link:nth-child(2) {
+    margin-right: 8px;
+}
+.header-menu-link:nth-child(3) {
+    margin-right: 20px;
 }
 
 .header-nav {
@@ -204,12 +213,12 @@ body {
     .shop-window {
         justify-content: end;
     }
-         /* .shop {
+          .shop {
                 min-width: 351px;
-                min-height: 1024px;
+                /* min-height: 1024px; */
                 
         
-            } */
+            } 
         
         
            .shop-btn {
