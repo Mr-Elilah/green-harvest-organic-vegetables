@@ -61,6 +61,10 @@
   color: #141414;
 }
 
+.vegetables-photo {
+  padding: 15px;
+}
+
 /* /Vegetables Styles Mobile */
 
 /* Vegetables Styles Tablet */
@@ -87,15 +91,17 @@
   }
 
   .vegetables-list {
-    display: flex;
-    justify-content: center;
     column-gap: 20px;
     row-gap: 28px;
   }
 
   .vegetables-item {
     padding: 32px 30px;
-    max-width: 342px;
+    width: calc((100% - 20px) / 2);
+  }
+
+  .vegetables-photo {
+    padding: 0;
   }
 }
 
@@ -109,14 +115,12 @@
   }
 
   .vegetables-list {
-    display: flex;
-    justify-content: center;
     column-gap: 21px;
   }
 
   .vegetables-item {
     padding: 32px;
-    max-width: 346px;
+    width: calc((100% - 42px) / 3);
   }
 }
 
