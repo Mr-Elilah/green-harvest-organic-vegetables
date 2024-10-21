@@ -69,6 +69,14 @@ p {
   padding: 0 9px;
 }
 
+.discount-title {
+  display: block;
+  text-align: left;
+  border-radius: 12px;
+  color: #fbfbfb;
+  background-color: #576f35;
+}
+
 .advertisement-title {
   display: block;
   font-weight: 600;
@@ -76,22 +84,29 @@ p {
   line-height: 1.04;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  background: #fbfbfb;
   color: #141414;
-}
-
-.discount-title {
-  display: block;
-  text-align: left;
-  border-radius: 12px;
-  width: 100%;
-  height: 100%;
-  background: #576f35;
-  color: #fbfbfb;
+  background-image: url(../img/advertisement/adv-img-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 102px;
   padding-left: 10px;
 }
 
+
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+
+  .discount-title {
+    background-color: #576f35;
+  }
+
+  .advertisement-title {
+    background-image: url(../img/advertisement/adv-img-mobile@2x.jpg);
+  }
+
+}
+
 @media only screen and (min-width: 768px) {
+
   .advertisement {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -103,18 +118,31 @@ p {
   }
 
   .advertisement-title {
-    width: 704px;
     font-size: 64px;
     line-height: 1.09;
-  }
-
-  .discount-title {
-    text-align: left;
+    background-image: url(../img/advertisement/adv-img-tablet.jpg);
+    background-size: 736px 86px;
+    padding-top: 8px;
     padding-left: 16px;
   }
+
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+
+
+  .discount-title {
+    background-color: #576f35;
+  }
+
+  .advertisement-title {
+    background-image: url(../img/advertisement/adv-img-tablet@2x.jpg);
+  }
+
 }
 
 @media only screen and (min-width: 1280px) {
+
   .advertisement-container {
     max-width: 1280px;
     padding: 0 100px;
@@ -125,6 +153,11 @@ p {
     width: 1054px;
     font-size: 76px;
     line-height: 1.05;
+    background-image: url(../img/advertisement/adv-img-desktop.jpg);
+    background-size: 808px 86px;
+    padding-top: 0px;
+    padding-left: 0px;
+
   }
 
   .discount-title {
@@ -132,7 +165,17 @@ p {
     text-align: center;
     width: 808px;
     margin-right: 7px;
-    padding-left: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+
+  .discount-title {
+    background-color: #576f35;
+  }
+
+  .advertisement-title {
+    background-image: url(../img/advertisement/adv-img-desktop@2x.jpg);
   }
 }
 
