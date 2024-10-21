@@ -74,10 +74,13 @@
     .modal-div-input {
     margin-bottom: 15px;
     }
+    input::placeholder {
+    color: #141414;   
+    }
     .modal-input {
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 30px;
-    padding: 14px 220px 14px 16px;
+    padding: 14px 160px 14px 16px;
     width: 100%;
     max-width: 295px;
     height: 46px;
@@ -103,21 +106,23 @@
     .modal-input:invalid  {
     border-color: #E74A3B;
     }
+    .modal-input-two {
+    padding: 14px 185px 14px 16px;
+    }
     .modal-textarea {
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 15px;
-    padding: 14px 219px 59px 16px;
+    padding: 14px 100px 59px 16px;
     width: 100%;
     max-width: 295px;
     height: 91px;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #141414;
     overflow: hidden;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #141414;
     }
     .modal-textarea:hover,
     .modal-textarea:active,
@@ -268,7 +273,11 @@
     .modal-div-input {
     margin-bottom: 15px;
     }
+    input::placeholder {
+    color: #141414;   
+    }
     .modal-input {
+    text-align: left;
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 30px;
     padding: 14px 220px 14px 16px;
@@ -296,18 +305,21 @@
     .modal-input:invalid  {
     border-color: #E74A3B;
     }
+    .modal-input-two {
+    padding: 14px 220px 14px 16px;
+    text-align: left;
+    }
     .modal-textarea {
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 15px;
-    padding: 14px 219px 59px 16px;
+    padding: 14px 100px 59px 16px;
     width: 295px;
     height: 91px;
-    font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 125%;
+    font-size: 14px;
+    line-height: 129%;
     letter-spacing: -0.02em;
-    text-align: center;
+    text-align: left;
     color: #141414;
     overflow: hidden;
     }
@@ -418,6 +430,7 @@
     margin-bottom: 50px;
     }
     .modal-input {
+    text-align: left;
     border-radius: 30px;
     padding: 16px 345px 16px 16px;
     width: 428px;
@@ -493,6 +506,9 @@
     width: 529px;
     height: 534px;
     margin-bottom: 0;
+    }
+    .modal-p {
+    width: 428px;
     }
     .modal-input {
     padding: 16px 346px 16px 16px;
