@@ -13,7 +13,7 @@
         <div>
             <label for="fullname"></label>
         <div class="modal-div-input">
-            <input class="modal-input" type="text" id="fullname" placeholder="Full name"
+            <input id="myInput" class="modal-input" type="text" id="fullname" placeholder="Full name"
             pattern="[a-zA-Z0-9]{3,}"
             title="Має утримувати тільки букви і бути не менше 3 символів">
         </div>
@@ -22,7 +22,7 @@
     <div>
             <label for="Email"></label>
         <div class="modal-div-input">
-            <input class="modal-input modal-input-two" type="email" id="Email" placeholder="Email"
+            <input id="emailInput" class="modal-input modal-input-two" type="email" id="Email" placeholder="Email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
             title="Введіть коректний Email (наприклад, example@domain.com)">
         </div>
@@ -31,7 +31,7 @@
     <div>
             <label></label>
         <div class="modal-div-textarea">
-            <textarea class="modal-textarea" placeholder="Comment">Comment
+            <textarea id="myTextarea" class="modal-textarea">Comment
             </textarea>
         </div>
     </div>
@@ -65,6 +65,27 @@
 
 </div>
 </div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const inputs = document.querySelectorAll('input');
+
+        inputs.forEach(input => {
+            const originalPlaceholder = input.placeholder;
+
+            input.addEventListener('mouseenter', () => {
+                input.placeholder = '';
+            });
+
+            input.addEventListener('mouseleave', () => {
+                if (input.value === '') {
+                    input.placeholder = originalPlaceholder;
+                }
+            });
+        });
+    });
+</script>
 </section>
 
 </main>
