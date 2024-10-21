@@ -20,6 +20,7 @@
 }
 
 .vegetables-text {
+  font-family: 'Inter Tight', sans-serif;
   max-width: 335px;
   font-weight: 500;
   font-size: 14px;
@@ -44,10 +45,13 @@
 }
 
 .vegetables-name {
-  margin-bottom: 12px;
-  font-size: 32px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 28px;
   line-height: 1;
   color: #7a3145;
+  margin-bottom: 12px;
 }
 
 .vegetables-price {
@@ -59,10 +63,6 @@
   text-align: left;
   text-transform: uppercase;
   color: #141414;
-}
-
-.vegetables-photo {
-  padding: 15px;
 }
 
 /* /Vegetables Styles Mobile */
@@ -91,6 +91,7 @@
   }
 
   .vegetables-list {
+    justify-content: center;
     column-gap: 20px;
     row-gap: 28px;
   }
