@@ -1,7 +1,7 @@
-
+/* 
 body {
   position: relative;
-}
+} */
 
 .container-header {
     position: absolute;
@@ -46,6 +46,8 @@ body {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -68,6 +70,16 @@ body {
     width: 32px;
     height: 32px;
   }
+
+    .shop-link-menu-list:nth-child(1) {
+        margin-top: 240px;
+    }
+    .shop-link-menu-list:nth-child(2),
+    .shop-link-menu-list:nth-child(3) {
+        margin-top: 8px;
+    }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -76,7 +88,17 @@ body {
     padding: 32px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 32px;
+        margin-bottom: 32px;
   }
+ .shop-link-menu-list:nth-child(1) {
+     margin-top: 360px;
+ }
+ .shop-link-menu-list:nth-child(2),
+ .shop-link-menu-list:nth-child(3) {
+     margin-top: 8px;
+ }
+   
 
   .item {
     width: 194px;
@@ -87,6 +109,11 @@ body {
     width: 40px;
     height: 40px;
   }
+
+   .shop-close-icon {
+       width: 40px;
+       height: 40px;
+   }
 }
 
 @media screen and (min-width: 1280px) {
@@ -94,8 +121,8 @@ body {
     width: 1280px;
     padding-left: 100px;
     padding-right: 100px;
-    /* margin-top: 32px; */
-    /* margin-bottom: 32px; */
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -112,23 +139,22 @@ body {
   padding: 0;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
-  .shop-close-btn {
-    top: 32px;
-    right: 32px;
-  }
 
-  .shop-close-icon {
-    width: 40px;
-    height: 40px;
-  }
-}
 
 .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  /* gap: 8px; */
+  
+}
+
+.header-menu-link:nth-child(1),
+.header-menu-link:nth-child(2) {
+    margin-right: 8px;
+}
+.header-menu-link:nth-child(3) {
+    margin-right: 20px;
 }
 
 .header-nav {
@@ -183,7 +209,7 @@ body {
   fill: #fbfbfb;
 }
 
-.link-menu-btn:focus,
+.link-menu-btn:active,
 .link-menu-btn:hover {
   background-color: #622133;
 }
@@ -204,6 +230,54 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+@media screen and (min-width: 768px) {
+    .shop-window {
+        justify-content: end;
+    }
+          .shop {
+                min-width: 351px;
+                /* min-height: 1024px; */
+                
+        
+            } 
+        
+        
+           .shop-btn {
+            bottom: 40px;
+                bottom: 50px;
+                left: 50%;
+                z-index: 666;
+                transform: translateX(-50%);
+        
+              
+        
+            }
+        
+            .shop-link-menu-btn {
+                font-size: 18px;
+                line-height: 111%;
+                padding: 16px 32px;
+                width: 157px;
+                height: 52px;
+            }
+        
+            .shop-link-menu {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                width: 114px;
+                height: 44px;
+                padding-right: auto;
+                    padding-left: auto;
+                font-size: 16px;
+                line-height: 125%;
+            }
+        
+            .shop-close-icon {
+                width: 40px;
+                height: 40px;
+        
+    } 
+}
 
 .shop-window.is-open {
   opacity: 1;
@@ -217,10 +291,10 @@ body {
   max-width: 812px;
   overflow: auto;
   background-color: #7a3145;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
 }
 
 .shop-close-btn {
@@ -242,7 +316,13 @@ body {
 
 .shop-btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 40px; 
+/* top: 0; */
+    left: 50%;
+    z-index: 666;
+    transform: translateX(-50%);
+
+
 }
 
 .shop-link-menu-btn {
@@ -251,20 +331,24 @@ body {
   line-height: 129%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #fbfbfb;
+  color: #7a3145;
+  
+  /* color: #fbfbfb; */
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 30px;
   text-decoration: none;
   padding: 16px 41px;
   width: 155px;
   height: 50px;
+  background-color: #fbfbfb;
 }
 
 .shop-btn :hover,
 .shop-btn :focus {
-  color: #7a3145;
+  /* color: #7a3145; */
   outline: none;
-  background-color: #fbfbfb;
+  /* background-color: #fbfbfb; */
+  color: rgba(122, 49, 69, 0.7);;
 }
 
 .header-menu-tablet {
@@ -272,15 +356,21 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 8px;
 }
 
 .shop-link-menu {
+    display: block;
+  
   border: 1px solid rgba(251, 251, 251, 0.4);
   border-radius: 12px;
   font-weight: 500;
   font-size: 14px;
-  padding: 12px 16px;
+  padding-top: 12px;
+  padding-buttom: 12px;
+padding-left: auto;
+padding-right: auto;
+  /* 16px; */
   width: 115px;
   height: 42px;
   line-height: 129%;
@@ -289,37 +379,58 @@ body {
   text-decoration: none;
   color: #fbfbfb;
 }
+ 
+ /* @media screen and (min-width: 768px) {
+     .shop-window {
+         justify-content: end;
+         position: relative; 
+     }
+
+     .shop {
+         min-width: 351px;
+         min-height: 1024px;
+        position: relative;
+         
+     }
+
+
+     .shop-btn {
+        
+         bottom: 50px;
+         
+     }
+
+     .shop-link-menu-btn {
+         font-size: 18px;
+         line-height: 111%;
+         padding: 16px 32px;
+         width: 157px;
+         height: 52px;
+     }
+
+     .shop-link-menu {
+         padding: 12px;
+         width: 114px;
+         height: 44px;
+         font-size: 16px;
+         line-height: 125%;
+     }
+           .shop-close-icon {
+               width: 40px;
+               height: 40px;
+               
+           }
+ } */
 
 @media screen and (min-width: 768px) {
-  .shop-window {
-    justify-content: end;
-  }
+    .shop-close-btn {
+        top: 32px;
+        right: 32px;
+    }
 
-  .shop {
-    min-width: 351px;
-    min-height: 1024px;
-  }
+    
+} 
 
-  .shop-btn {
-    bottom: 50px;
-  }
-
-  .shop-link-menu-btn {
-    font-size: 18px;
-    line-height: 111%;
-    padding: 16px 32px;
-    width: 157px;
-    height: 52px;
-  }
-
-  .shop-link-menu {
-    padding: 12px;
-    width: 114px;
-    height: 44px;
-    font-size: 16px;
-    line-height: 125%;
-  }
-}
 .shop-link-menu:hover,
 .shop-link-menu:focus {
   color: #7a3145;
