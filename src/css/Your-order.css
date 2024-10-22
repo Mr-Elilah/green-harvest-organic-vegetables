@@ -131,6 +131,14 @@
     border-color: #7A3145;  
     outline: none;
     }
+    textarea::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #141414;
+    }
     .modal-div-textarea {
     margin-bottom: 20px;
     }
