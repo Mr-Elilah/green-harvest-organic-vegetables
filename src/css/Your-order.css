@@ -123,6 +123,7 @@
     letter-spacing: -0.02em;
     text-align: left;
     color: #141414;
+    resize: none;
     }
     .modal-textarea:hover,
     .modal-textarea:active,
@@ -440,6 +441,7 @@
     padding: 16px 344px 59px 16px;
     width: 428px;
     height: 95px;
+    resize: none;
     }
     .modal-div-textarea {
     margin-bottom: 25px;
