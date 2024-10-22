@@ -5,7 +5,7 @@ body {
 
 .container-header {
     position: absolute;
-    top: 0;
+    top: 32px;
     left: 50%;
     z-index: 666;
     transform: translateX(-50%);
@@ -117,8 +117,8 @@ body {
     width: 1280px;
     padding-left: 100px;
     padding-right: 100px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    /* margin-top: 32px;
+    margin-bottom: 32px; */
   }
 }
 
