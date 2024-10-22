@@ -5,7 +5,7 @@ body {
 
 .container-header {
     position: absolute;
-    top: 32px;
+    top: 0;
     left: 50%;
     z-index: 666;
     transform: translateX(-50%);
@@ -46,6 +46,8 @@ body {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -86,6 +88,8 @@ body {
     padding: 32px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 32px;
+        margin-bottom: 32px;
   }
  .shop-link-menu-list:nth-child(1) {
      margin-top: 360px;
@@ -117,8 +121,8 @@ body {
     width: 1280px;
     padding-left: 100px;
     padding-right: 100px;
-    /* margin-top: 32px;
-    margin-bottom: 32px; */
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
