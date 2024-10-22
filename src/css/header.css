@@ -68,6 +68,16 @@ body {
     width: 32px;
     height: 32px;
   }
+
+    .shop-link-menu-list:nth-child(1) {
+        margin-top: 240px;
+    }
+    .shop-link-menu-list:nth-child(2),
+    .shop-link-menu-list:nth-child(3) {
+        margin-top: 8px;
+    }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -77,6 +87,13 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+ .shop-link-menu-list:nth-child(1) {
+     margin-top: 360px;
+ }
+ .shop-link-menu-list:nth-child(2),
+ .shop-link-menu-list:nth-child(3) {
+     margin-top: 8px;
+ }
    
 
   .item {
@@ -100,8 +117,8 @@ body {
     width: 1280px;
     padding-left: 100px;
     padding-right: 100px;
-    /* margin-top: 32px; */
-    /* margin-bottom: 32px; */
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -222,8 +239,13 @@ body {
         
         
            .shop-btn {
-        
+            bottom: 40px;
                 bottom: 50px;
+                left: 50%;
+                z-index: 666;
+                transform: translateX(-50%);
+        
+              
         
             }
         
@@ -236,9 +258,12 @@ body {
             }
         
             .shop-link-menu {
-                padding: 12px;
+                padding-top: 12px;
+                padding-bottom: 12px;
                 width: 114px;
                 height: 44px;
+                padding-right: auto;
+                    padding-left: auto;
                 font-size: 16px;
                 line-height: 125%;
             }
@@ -262,10 +287,10 @@ body {
   max-width: 812px;
   overflow: auto;
   background-color: #7a3145;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
 }
 
 .shop-close-btn {
@@ -287,7 +312,13 @@ body {
 
 .shop-btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 40px; 
+/* top: 0; */
+    left: 50%;
+    z-index: 666;
+    transform: translateX(-50%);
+
+
 }
 
 .shop-link-menu-btn {
@@ -321,15 +352,21 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 8px;
 }
 
 .shop-link-menu {
+    display: block;
+  
   border: 1px solid rgba(251, 251, 251, 0.4);
   border-radius: 12px;
   font-weight: 500;
   font-size: 14px;
-  padding: 12px 16px;
+  padding-top: 12px;
+  padding-buttom: 12px;
+padding-left: auto;
+padding-right: auto;
+  /* 16px; */
   width: 115px;
   height: 42px;
   line-height: 129%;
