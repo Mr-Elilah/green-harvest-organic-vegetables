@@ -86,6 +86,7 @@ p {
   text-transform: uppercase;
   color: #141414;
   background-image: url(../img/advertisement/adv-img-mobile.jpg);
+  background-position-y: 1px;
   background-repeat: no-repeat;
   background-size: 100% 102px;
   padding-top: 3px;
