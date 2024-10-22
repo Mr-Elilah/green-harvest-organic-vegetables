@@ -60,6 +60,11 @@
   .footer-logo {
     margin-bottom: 25px;
   }
+
+  .footer-logo-icon {
+    width: 194px;
+    height: 18px;
+  }
 }
 
 .footer-slogan {
