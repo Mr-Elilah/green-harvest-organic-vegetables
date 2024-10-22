@@ -1,5 +1,5 @@
 <!-- section 6 -->        
-<section class="my-section" id="shop-now">
+<section class="my-section frame-viewport" id="shop-now">
     <div class="my-section-div container">
 <div class="div-h-p">
   <h2 class="my-h">Fresh <a class="my-harvest">Harvest</a> Box has got you covered</h2>
@@ -9,29 +9,31 @@
 <div class="modal-and-div">
   <div class="modal">
     <p class="modal-p">Ordering <a class="modal-a">from us</a> is quick and easy! Fill out <a class="modal-a-two">the form</a> below and we will contact you !</p>
-    <form class="modal-form" action="" method="">
+        <form class="modal-form" action="" method="">
         <div>
-            <label for="name"></label>
+            <label for="fullname"></label>
         <div class="modal-div-input">
-            <input class="modal-input" type="text" id="name" placeholder="Name"
+            <input id="myInput" class="modal-input" type="text" id="fullname" placeholder="Full name"
             pattern="[a-zA-Z0-9]{3,}"
             title="Має утримувати тільки букви і бути не менше 3 символів">
         </div>
     </div>
 
-        <div>
+    <div>
             <label for="Email"></label>
         <div class="modal-div-input">
-            <input class="modal-input" type="email" id="Email" placeholder="Email"
+            <input id="emailInput" class="modal-input modal-input-two" type="email" id="Email" placeholder="Email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
             title="Введіть коректний Email (наприклад, example@domain.com)">
         </div>
     </div>
 
-        <div>
+    <div>
             <label></label>
-        <div class="modal-div-textarea"><textarea class="modal-textarea" placeholder="Comment">
-        </textarea></div>
+        <div class="modal-div-textarea">
+            <textarea id="myTextarea" class="modal-textarea">Comment
+            </textarea>
+        </div>
     </div>
 
         <button class="modal-button" type="submit">Send</button>
@@ -43,7 +45,7 @@
     <source media="(min-width: 1280px)"
     srcset="../img/yourorder/orderdecktop@1x.jpg 1x, ../img/yourorder/orderdecktop@2x.jpg 2x">
     <source media="(min-width: 768px)"
-            srcset="../img/yourorder/ordertabl@1x.jpg 1x, ../img/yourorder/ordertab@2x.jpg 2x">
+            srcset="../img/yourorder/ordertab@1x.jpg 1x, ../img/yourorder/ordertab@2x.jpg 2x">
     <img
     class="div-two-image"
     src="../img/yourorder/ordermob@1x.jpg"
@@ -63,6 +65,27 @@
 
 </div>
 </div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const inputs = document.querySelectorAll('input');
+
+        inputs.forEach(input => {
+            const originalPlaceholder = input.placeholder;
+
+            input.addEventListener('mouseenter', () => {
+                input.placeholder = '';
+            });
+
+            input.addEventListener('mouseleave', () => {
+                if (input.value === '') {
+                    input.placeholder = originalPlaceholder;
+                }
+            });
+        });
+    });
+</script>
 </section>
 
 </main>
