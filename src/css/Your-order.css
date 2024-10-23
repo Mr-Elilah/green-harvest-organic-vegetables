@@ -1,4 +1,4 @@
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
     .my-section-div {
     max-width: 374px;
     }
@@ -63,10 +63,11 @@
     input::placeholder {
     color: #141414;   
     }
+
     .modal-input {
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 30px;
-    padding: 14px 160px 14px 16px;
+    padding: 14px 16px 14px 16px;
     width: 100%;
     max-width: 295px;
     height: 46px;
@@ -75,7 +76,7 @@
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.02em;
-    text-align: center;
+    text-align: left;
     color: #141414;
     transition: border-color 0.3s;
     }
@@ -93,16 +94,16 @@
     border-color: #E74A3B;
     }
     .modal-input-two {
-    padding: 14px 185px 14px 16px;
+    padding: 14px 16px 14px 16px;
     }
     .modal-textarea {
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 15px;
-    padding: 14px 100px 59px 16px;
+    padding: 14px 16px;
     width: 100%;
     max-width: 295px;
     height: 91px;
-    overflow: hidden;
+    overflow: auto;
     font-weight: 500;
     font-size: 14px;
     line-height: 129%;
@@ -122,7 +123,7 @@
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.02em;
-    text-align: center;
+    text-align: left;
     color: #141414;
     }
     .modal-div-textarea {
@@ -144,6 +145,7 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #FBFBFB;
+    transition: backgroung-color 600ms cubic-bezier(0.4, 0, 0.2, 1), color 600ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .div-two {
     border-radius: 30px;
@@ -257,14 +259,15 @@
     .modal-div-input {
     margin-bottom: 15px;
     }
-    input::placeholder {
+    input::placeholder,
+    textarea::placeholder {
     color: #141414;   
     }
     .modal-input {
     text-align: left;
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 30px;
-    padding: 14px 220px 14px 16px;
+    padding: 14px 16px 14px 16px;
     width: 295px;
     height: 46px;
     font-family: var(--font-family);
@@ -272,7 +275,7 @@
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.02em;
-    text-align: center;
+    text-align: left;
     color: #141414;
     transition: border-color 0.3s;
     }
@@ -290,13 +293,13 @@
     border-color: #E74A3B;
     }
     .modal-input-two {
-    padding: 14px 220px 14px 16px;
+    padding: 14px 16px 14px 16px;
     text-align: left;
     }
     .modal-textarea {
     border: 1px solid rgba(20, 20, 20, 0.2);
     border-radius: 15px;
-    padding: 14px 100px 59px 16px;
+    padding: 14px 16px;
     width: 295px;
     height: 91px;
     font-weight: 500;
@@ -305,7 +308,7 @@
     letter-spacing: -0.02em;
     text-align: left;
     color: #141414;
-    overflow: hidden;
+    overflow: auto;
     }
     .modal-textarea:hover,
     .modal-textarea:active,
@@ -331,6 +334,7 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #FBFBFB;
+
     }
     .div-two {
     border-radius: 30px;
@@ -413,12 +417,12 @@
     .modal-input {
     text-align: left;
     border-radius: 30px;
-    padding: 16px 345px 16px 16px;
+    padding: 16px;
     width: 428px;
     height: 52px;
     }
     .modal-textarea {
-    padding: 16px 344px 59px 16px;
+    padding: 16px;
     width: 428px;
     height: 95px;
     resize: none;
@@ -493,15 +497,18 @@
     width: 428px;
     }
     .modal-input {
-    padding: 16px 346px 16px 16px;
+    padding: 16px;
     width: 429px;
     }
     .modal-textarea {
-    padding: 16px 345px 59px 16px;
-    width: 429px;
+     width: 429px;
     }
     .modal-button {
     width: 429px;
+    }
+    .modal-button:hover,
+    .modal-button:focus {
+    background-color: #7A3145;
     }
     .div-two {
     width: 527px;

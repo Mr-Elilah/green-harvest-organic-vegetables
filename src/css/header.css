@@ -100,7 +100,6 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    padding-top: 240px;
 }
 
 .shop-link-menu {
@@ -120,7 +119,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .header-menu-tablet {
+    .shop {
         padding-top: 360px;
     }
 
@@ -211,10 +210,16 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 375px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 375px;
     height: 100%;
     background-color: #7a3145;
     overflow: auto;
+    padding-top: 240px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .shop-btn {
