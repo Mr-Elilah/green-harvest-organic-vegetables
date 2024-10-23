@@ -160,7 +160,9 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
+    background-color: transparent;
     text-decoration: none;
+    transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1), background-color 600ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .link-menu-btn {
@@ -177,11 +179,18 @@
     width: 158px;
     height: 52px;
     background: #7a3145;
+    transition: background-color 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-menu-btn:hover,
 .link-menu-btn:focus {
     background-color: #622133;
+}
+
+.link-menu:hover,
+.link-menu:focus {
+    color: #7a3145;
+    background-color: #fbfbfb;
 }
 
 /* -----------------------------shop-window------------------------------- */
