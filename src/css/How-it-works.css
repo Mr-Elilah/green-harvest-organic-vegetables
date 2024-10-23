@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
     
     background: linear-gradient(to bottom,
     #7a3145 0%,
@@ -16,7 +18,7 @@
     display: flex;
     justify-content: center;
     background-color: #7a3145;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     padding-bottom: 40px;
 }
 
@@ -33,7 +35,7 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     background-color: #576f35;
 }
 
@@ -154,9 +156,11 @@
                 #7a3145 840px,
                 #576f35 840px,
                 #576f35 1539px);
+    padding-top: 100px;
+    padding-bottom: 100px;
     }
     .container.how-it-works-image {
-        padding-top: 100px;
+        /* padding-top: 100px; */
         padding-bottom: 100px;
         padding-left: 64px;
         padding-right: 64px;
@@ -164,7 +168,7 @@
 
     .container.how-it-works-content {
         padding-top: 100px;
-        padding-bottom: 100px;
+        /* padding-bottom: 100px; */
         width: 100%;
     }
 
@@ -207,8 +211,8 @@
         justify-content: center;
         background: linear-gradient(to right,
                     #7a3145 0%,
-                    #7a3145 50%,
-                    #576f35 50%,
+                    #7a3145 630px,
+                    #576f35 630px,
                     #576f35 100%);
         }
         
@@ -218,6 +222,7 @@
         padding: 100px;
         width: 630px;
         margin-right: 0;
+        height: 100%;
     }
 
     .container.how-it-works-content {
