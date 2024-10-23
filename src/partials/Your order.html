@@ -1,166 +1,109 @@
 <!-- section 6 -->
 <section class="my-section frame-viewport" id="shop-now">
-  <div class="my-section-div container">
-    <div class="div-h-p">
-      <h2 class="my-h">
-        Fresh <a class="my-harvest">Harvest</a> Box has got you covered
-      </h2>
-      <p class="my-p">
-        Our boxes are packed with delicious, nutritious vegetables, perfect for
-        anyone looking to eat healthier or support local farmers. Order your box
-        today and start enjoying the best that nature has to offer!
-      </p>
-    </div>
-    <!-- modal and div -->
-    <div class="modal-and-div">
-      <div class="modal">
-        <p class="modal-p">
-          Ordering <a class="modal-a">from us</a> is quick and easy! Fill out
-          <a class="modal-a-two">the form</a> below and we will contact you !
-        </p>
-        <form class="modal-form">
-          <div>
-            <label for="myInput"></label>
-            <div class="modal-div-input">
-              <input
-                class="modal-input"
-                type="text"
-                id="myInput"
-                placeholder="Full name"
-                pattern="[a-zA-Z0-9]{3,}"
-                title="Має утримувати тільки букви і бути не менше 3 символів"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="emailInput"></label>
-            <div class="modal-div-input">
-              <input
-                class="modal-input modal-input-two"
-                type="email"
-                id="emailInput"
-                placeholder="Email"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
-                title="Введіть коректний Email (наприклад, example@domain.com)"
-              />
-            </div>
-          </div>
-          <div>
-            <div class="modal-div-textarea">
-              <textarea
-                id="comment"
-                class="modal-textarea"
-                placeholder="Comment"
-              ></textarea>
-            </div>
-          </div>
-          <button class="modal-button" type="submit">Send</button>
-        </form>
-      </div>
-      <div class="div-two">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              /img/yourorder/orderdecktop@1x.jpg 1x,
-              /img/yourorder/orderdecktop@2x.jpg 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              /img/yourorder/ordertab@1x.jpg 1x,
-              /img/yourorder/ordertab@2x.jpg 2x
-            "
-          />
-          <img
-            class="div-two-image"
-            src="/img/yourorder/ordermob@1x.jpg"
-            srcset="
-              /img/yourorder/ordermob@1x.jpg 1x,
-              /img/yourorder/ordermob@2x.jpg 2x
-            "
-            alt="fresh"
-          />
-        </picture>
-
-        <p class="div-two-p">Follow us on our social networks:</p>
-        <div class="div-two-two">
-          <ul class="div-two-ul">
-            <li>
-              <a
-                class="div-two-li"
-                href="https://www.instagram.com/goitclub/"
-                target="_blank"
-                rel="no-referrer"
-                >instagram&nbsp;/</a
-              >
-            </li>
-            <li>
-              <a
-                class="div-two-li"
-                href="https://www.facebook.com/goITclub/"
-                target="_blank"
-                rel="no-referrer"
-                >&nbsp;facebook&nbsp;/&nbsp;</a
-              >
-            </li>
-            <li>
-              <a
-                class="div-two-li"
-                href="https://www.youtube.com/c/GoIT"
-                target="_blank"
-                rel="no-referrer"
-                >youtube</a
-              >
-            </li>
-          </ul>
+    <div class="my-section-div container">
+<div class="div-h-p">
+  <h2 class="my-h">Fresh <a class="my-harvest">Harvest</a> Box has got you covered</h2>
+  <p class="my-p">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
+</div>
+<!-- modal and div -->  
+<div class="modal-and-div">
+  <div class="modal">
+    <p class="modal-p">Ordering <a class="modal-a">from us</a> is quick and easy! Fill out <a class="modal-a-two">the form</a> below and we will contact you !</p>
+        <form class="modal-form" action="" method="">
+        <div>
+            <label for="fullname"></label>
+        <div class="modal-div-input">
+            <input id="myInput" class="modal-input" type="text" id="fullname" placeholder="Full name"
+            pattern="[a-zA-Z0-9]{3,}"
+            title="Має утримувати тільки букви і бути не менше 3 символів">
         </div>
-      </div>
+    </div>
+    <div>
+            <label for="Email"></label>
+        <div class="modal-div-input">
+            <input id="emailInput" class="modal-input modal-input-two" type="email" id="Email" placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
+            title="Введіть коректний Email (наприклад, example@domain.com)">
+        </div>
+    </div>
+    <div>     
+        <div class="modal-div-textarea">
+            <textarea id="comment" class="modal-textarea" placeholder="Comment">Comment
+            </textarea>
+        </div>
+    </div>
+        <button class="modal-button" type="submit">Send</button>
+    </form>
+  </div>
+  <div class="div-two">
+    <picture>
+    <source media="(min-width: 1280px)"
+    srcset="/img/yourorder/orderdecktop@1x.jpg 1x, /img/yourorder/orderdecktop@2x.jpg 2x">
+    <source media="(min-width: 768px)"
+            srcset="/img/yourorder/ordertab@1x.jpg 1x, /img/yourorder/ordertab@2x.jpg 2x">
+    <img
+    class="div-two-image"
+    src="/img/yourorder/ordermob@1x.jpg"
+    srcset="/img/yourorder/ordermob@1x.jpg 1x, /img/yourorder/ordermob@2x.jpg 2x"
+    alt="fresh">
+    </picture>
+
+    <p class="div-two-p">Follow us on our social networks:</p>
+    <div class="div-two-two">
+        <ul class="div-two-ul">
+           <li><a class="div-two-li" href="https://www.instagram.com/goitclub/" target="_blank" rel="no-referrer">instagram&nbsp;/</a></li>
+           <li><a class="div-two-li" href="https://www.facebook.com/goITclub/" target="_blank" rel="no-referrer">&nbsp;facebook&nbsp;/&nbsp;</a></li>
+           <li><a class="div-two-li" href="https://www.youtube.com/c/GoIT" target="_blank" rel="no-referrer">youtube</a></li> 
+        </ul>
     </div>
   </div>
 
-  <script>
+</div>
+</div>
+
+<script>
     document.addEventListener('DOMContentLoaded', () => {
-      const inputs = document.querySelectorAll('input');
+        const inputs = document.querySelectorAll('input');
 
-      inputs.forEach(input => {
-        const originalPlaceholder = input.placeholder;
+        inputs.forEach(input => {
+            const originalPlaceholder = input.placeholder;
 
-        input.addEventListener('mouseenter', () => {
-          input.placeholder = '';
+            input.addEventListener('mouseenter', () => {
+                input.placeholder = '';
+            });
+
+            input.addEventListener('mouseleave', () => {
+                if (input.value === '') {
+                    input.placeholder = originalPlaceholder;
+                }
+            });
         });
-
-        input.addEventListener('mouseleave', () => {
-          if (input.value === '') {
-            input.placeholder = originalPlaceholder;
-          }
-        });
-      });
     });
-  </script>
-  <script>
+</script>
+<script>
     const textarea = document.getElementById('comment');
 
     // При фокусе очищаем текст, если это "Comment"
-    textarea.addEventListener('focus', function () {
+    textarea.addEventListener('focus', function() {
       if (textarea.value === 'Comment') {
-        textarea.value = ''; // Очищаем текст
+        textarea.value = '';  // Очищаем текст
       }
     });
 
     // При потере фокуса возвращаем "Comment", если поле пустое
-    textarea.addEventListener('blur', function () {
+    textarea.addEventListener('blur', function() {
       if (textarea.value === '') {
-        textarea.value = 'Comment'; // Возвращаем текст
+        textarea.value = 'Comment';  // Возвращаем текст
       }
     });
 
     // Удаляем текст, если пользователь начинает ввод
-    textarea.addEventListener('input', function () {
+    textarea.addEventListener('input', function() {
       if (textarea.value === 'Comment') {
-        textarea.value = ''; // Очищаем, если пользователь начал печатать
+        textarea.value = '';  // Очищаем, если пользователь начал печатать
       }
     });
-  </script>
+</script>
+
+
 </section>
