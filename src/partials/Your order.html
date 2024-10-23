@@ -9,11 +9,11 @@
 <div class="modal-and-div">
   <div class="modal">
     <p class="modal-p">Ordering <a class="modal-a">from us</a> is quick and easy! Fill out <a class="modal-a-two">the form</a> below and we will contact you !</p>
-        <form class="modal-form" action="" method="">
+        <form class="modal-form">
         <div>
             <label for="fullname"></label>
         <div class="modal-div-input">
-            <input id="myInput" class="modal-input" type="text" id="fullname" placeholder="Full name"
+            <input class="modal-input" type="text" id="fullname" placeholder="Full name"
             pattern="[a-zA-Z0-9]{3,}"
             title="Має утримувати тільки букви і бути не менше 3 символів">
         </div>
@@ -21,14 +21,14 @@
     <div>
             <label for="Email"></label>
         <div class="modal-div-input">
-            <input id="emailInput" class="modal-input modal-input-two" type="email" id="Email" placeholder="Email"
+            <input class="modal-input modal-input-two" type="email" id="Email" placeholder="Email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
             title="Введіть коректний Email (наприклад, example@domain.com)">
         </div>
     </div>
     <div>     
         <div class="modal-div-textarea">
-            <textarea id="comment" class="modal-textarea" placeholder="Comment">Comment
+            <textarea id="comment" class="modal-textarea" placeholder="Comment">
             </textarea>
         </div>
     </div>
@@ -57,53 +57,6 @@
         </ul>
     </div>
   </div>
-
 </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const inputs = document.querySelectorAll('input');
-
-        inputs.forEach(input => {
-            const originalPlaceholder = input.placeholder;
-
-            input.addEventListener('mouseenter', () => {
-                input.placeholder = '';
-            });
-
-            input.addEventListener('mouseleave', () => {
-                if (input.value === '') {
-                    input.placeholder = originalPlaceholder;
-                }
-            });
-        });
-    });
-</script>
-<script>
-    const textarea = document.getElementById('comment');
-
-    // При фокусе очищаем текст, если это "Comment"
-    textarea.addEventListener('focus', function() {
-      if (textarea.value === 'Comment') {
-        textarea.value = '';  // Очищаем текст
-      }
-    });
-
-    // При потере фокуса возвращаем "Comment", если поле пустое
-    textarea.addEventListener('blur', function() {
-      if (textarea.value === '') {
-        textarea.value = 'Comment';  // Возвращаем текст
-      }
-    });
-
-    // Удаляем текст, если пользователь начинает ввод
-    textarea.addEventListener('input', function() {
-      if (textarea.value === 'Comment') {
-        textarea.value = '';  // Очищаем, если пользователь начал печатать
-      }
-    });
-</script>
-
-
 </section>
