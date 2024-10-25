@@ -368,7 +368,7 @@
         <div>
             <label for="fullname"></label>
         <div class="modal-div-input">
-            <input class="modal-input" type="text" id="fullname" placeholder="Full name"
+            <input class="modal-input" type="text" id="name-input" placeholder="Full name"
             pattern="[a-zA-Z0-9]{3,}"
             title="Має утримувати тільки букви і бути не менше 3 символів">
         </div>
@@ -376,14 +376,14 @@
     <div>
             <label for="Email"></label>
         <div class="modal-div-input">
-            <input class="modal-input modal-input-two" type="email" id="Email" placeholder="Email"
+            <input class="modal-input modal-input-two" type="email" id="email-input" placeholder="Email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
             title="Введіть коректний Email (наприклад, example@domain.com)">
         </div>
     </div>
     <div>     
         <div class="modal-div-textarea">
-            <textarea id="comment" name="comment" class="modal-textarea" placeholder="Comment"></textarea>
+            <textarea id="message-textarea" name="comment" class="modal-textarea" placeholder="Comment"></textarea>
         </div>
     </div>
         <button class="modal-button" type="submit">Send</button>
@@ -413,6 +413,31 @@
   </div>
 </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Получаем поля с id
+    const nameField = document.getElementById('name-input');
+    const emailField = document.getElementById('email-input');
+    const textareaField = document.getElementById('message-textarea');
+
+    // Функция для скрытия и восстановления placeholder
+    function handlePlaceholder(field) {
+        field.addEventListener('mouseover', function() {
+            this.setAttribute('data-placeholder', this.placeholder);
+            this.placeholder = '';
+        });
+
+        field.addEventListener('mouseout', function() {
+            this.placeholder = this.getAttribute('data-placeholder');
+        });
+    }
+
+    // Применяем функцию ко всем полям
+    handlePlaceholder(nameField);
+    handlePlaceholder(emailField);
+    handlePlaceholder(textareaField);
+});
+</script>
 </section>
 
     </main>
