@@ -196,7 +196,7 @@
     color: #FBFBFB;
     text-decoration: none;
     }  
-}
+    }
 @media screen and (min-width: 375px) {
     .my-section-div {
     min-width: 375px;
@@ -389,7 +389,7 @@
     text-decoration: none;
     }  
     }
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .my-section {
     padding: 100px 0;
     }
@@ -468,7 +468,7 @@
     line-height: 100%;
     }
     }
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     .my-section {
     display: flex;
     padding: 100px;
