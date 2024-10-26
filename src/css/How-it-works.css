@@ -4,22 +4,31 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 80px;
-    
-    background: linear-gradient(to bottom,
-    #7a3145 0%,
-    #7a3145 530px,
-    #576f35 530px,
-    #576f35 1184px);
+    background-color: #576f35;
 }
 
 .container.how-it-works-image {
     display: flex;
     justify-content: center;
     background-color: #7a3145;
-    /* padding-top: 40px; */
+    padding-top: 40px;
     padding-bottom: 40px;
+
+}
+
+.responsive-content-image {
+    position: relative;
+}
+
+.responsive-content-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3));
+    border-radius: 30px;
 }
 
 .how-it-works-responsive-image {
@@ -34,8 +43,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 80px;
     padding-top: 80px;
-    /* padding-bottom: 80px; */
     background-color: #576f35;
 }
 
@@ -80,7 +89,7 @@
     max-width: 335px;
     margin-top: 0;
     margin-bottom: 0;
-    
+
 }
 
 .how-it-works-step-item {
@@ -92,7 +101,15 @@
     border-radius: 15px;
     padding: 12px 27px 12px 24px;
     justify-content: flex-start;
-    counter-increment: item;   
+    counter-increment: item;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.how-it-works-step-item:hover,
+.how-it-works-step-item:focus {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .how-it-works-step-item-text {
@@ -150,17 +167,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .how-it-works-section {
-    background: linear-gradient(to bottom,
-                #7a3145 0%,
-                #7a3145 840px,
-                #576f35 840px,
-                #576f35 1539px);
-    padding-top: 100px;
-    padding-bottom: 100px;
-    }
     .container.how-it-works-image {
-        /* padding-top: 100px; */
+        padding-top: 100px;
         padding-bottom: 100px;
         padding-left: 64px;
         padding-right: 64px;
@@ -168,7 +176,7 @@
 
     .container.how-it-works-content {
         padding-top: 100px;
-        /* padding-bottom: 100px; */
+        padding-bottom: 100px;
         width: 100%;
     }
 
@@ -202,21 +210,16 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    
+
     .how-it-works-section {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 0;
         justify-content: center;
-        background: linear-gradient(to right,
-                    #7a3145 0%,
-                    #7a3145 630px,
-                    #576f35 630px,
-                    #576f35 100%);
-        }
-        
-   
+    }
+
+
 
     .container.how-it-works-image {
         padding: 100px;
