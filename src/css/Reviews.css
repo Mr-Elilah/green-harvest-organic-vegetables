@@ -1,4 +1,4 @@
-.container.reviews-container {
+.section-reviews {
   padding-bottom: 80px;
   padding-top: 80px;
 }
@@ -26,9 +26,6 @@
 }
 
 .section-reviews-paragraph {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.25;
   color: #141414;
   text-align: left;
 }
@@ -41,10 +38,10 @@
   height: 238px;
   flex-direction: column;
 }
- .section-reviews-images {
-   margin-bottom: 24px;
- }
- 
+.section-reviews-images {
+  margin-bottom: 24px;
+}
+
 .section-reviews-images-team {
   width: 56px;
   height: 56px;
@@ -65,11 +62,7 @@
 }
 
 .section-paragraph-reviews-name {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.3;
   text-align: center;
-  color: rgba(4, 3, 6, 0.4);
 }
 
 .remove-one {
@@ -80,7 +73,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container.reviews-container {
+  .section-reviews {
     padding-bottom: 100px;
     padding-top: 100px;
   }
@@ -95,12 +88,11 @@
     width: 553px;
   }
 
-    .section-reviews-images {
-      margin-bottom: 24px;
-    }
+  .section-reviews-images {
+    margin-bottom: 24px;
+  }
 
   .section-reviews-paragraph {
-    font-size: 16px;
     width: 553px;
   }
 
@@ -115,16 +107,12 @@
     font-size: 18px;
     line-height: 1.1;
 
-    text-align: center;
     color: #141414;
     margin-bottom: 8px;
   }
 
   .section-paragraph-reviews-name {
-    font-size: 16px;
     line-height: 1.4;
-    text-align: center;
-    color: rgba(20, 20, 20, 0.4);
   }
 
   .remove-one {
@@ -142,11 +130,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container.reviews-container {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
   .list-section-reviews {
     padding-bottom: 0px;
     display: flex;
@@ -156,11 +139,6 @@
   }
 
   .section-paragraph-reviews-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.4;
-    text-align: center;
-    color: rgba(20, 20, 20, 0.4);
     width: 288px;
   }
 
