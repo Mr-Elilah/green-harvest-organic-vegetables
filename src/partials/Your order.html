@@ -16,29 +16,29 @@
       <div class="modal">
         <p class="modal-p">
           Ordering <a class="modal-a">from us</a> is quick and easy! Fill out
-          <a class="modal-a-two">the form</a> below and we will contact you !
+          <a class="modal-a-two">the form</a> below and we will contact you!
         </p>
         <form class="modal-form">
           <div>
-            <label for="fullname"></label>
+            <label for="name-input"></label>
             <div class="modal-div-input">
               <input
                 class="modal-input"
                 type="text"
-                id="fullname"
+                id="name-input"
                 placeholder="Full name"
                 pattern="[a-zA-Z0-9]{3,}"
-                title="Має утримувати тільки букви і бути не менше 3 символів"
+                title="Має утримувати тільки букви и быть не меньше 3 символів"
               />
             </div>
           </div>
           <div>
-            <label for="Email"></label>
+            <label for="email-input"></label>
             <div class="modal-div-input">
               <input
                 class="modal-input modal-input-two"
                 type="email"
-                id="Email"
+                id="email-input"
                 placeholder="Email"
                 pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
                 title="Введіть коректний Email (наприклад, example@domain.com)"
@@ -48,7 +48,8 @@
           <div>
             <div class="modal-div-textarea">
               <textarea
-                id="comment"
+                id="message-textarea"
+                name="comment"
                 class="modal-textarea"
                 placeholder="Comment"
               ></textarea>
@@ -61,29 +62,19 @@
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcset="
-              /img/yourorder/orderdecktop@1x.jpg 1x,
-              /img/yourorder/orderdecktop@2x.jpg 2x
-            "
+            srcset="/img/yourorder/orderdecktop@1x.jpg 1x, /img/yourorder/orderdecktop@2x.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="
-              /img/yourorder/ordertab@1x.jpg 1x,
-              /img/yourorder/ordertab@2x.jpg 2x
-            "
+            srcset="/img/yourorder/ordertab@1x.jpg 1x, /img/yourorder/ordertab@2x.jpg 2x"
           />
           <img
             class="div-two-image"
             src="/img/yourorder/ordermob@1x.jpg"
-            srcset="
-              /img/yourorder/ordermob@1x.jpg 1x,
-              /img/yourorder/ordermob@2x.jpg 2x
-            "
+            srcset="/img/yourorder/ordermob@1x.jpg 1x, /img/yourorder/ordermob@2x.jpg 2x"
             alt="fresh"
           />
         </picture>
-
         <p class="div-two-p">Follow us on our social networks:</p>
         <div class="div-two-two">
           <ul class="div-two-ul">
@@ -92,7 +83,7 @@
                 class="div-two-li"
                 href="https://www.instagram.com/goitclub/"
                 target="_blank"
-                rel="no-referrer"
+                rel="noopener noreferrer"
                 >instagram&nbsp;/</a
               >
             </li>
@@ -101,7 +92,7 @@
                 class="div-two-li"
                 href="https://www.facebook.com/goITclub/"
                 target="_blank"
-                rel="no-referrer"
+                rel="noopener noreferrer"
                 >&nbsp;facebook&nbsp;/&nbsp;</a
               >
             </li>
@@ -110,7 +101,7 @@
                 class="div-two-li"
                 href="https://www.youtube.com/c/GoIT"
                 target="_blank"
-                rel="no-referrer"
+                rel="noopener noreferrer"
                 >youtube</a
               >
             </li>
@@ -119,4 +110,31 @@
       </div>
     </div>
   </div>
+
+  <!-- Inline script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Получаем поля с id
+      const nameField = document.getElementById('name-input');
+      const emailField = document.getElementById('email-input');
+      const textareaField = document.getElementById('message-textarea');
+
+      // Функция для скрытия и восстановления placeholder
+      function handlePlaceholder(field) {
+          field.addEventListener('mouseover', function() {
+              this.setAttribute('data-placeholder', this.placeholder);
+              this.placeholder = '';
+          });
+
+          field.addEventListener('mouseout', function() {
+              this.placeholder = this.getAttribute('data-placeholder');
+          });
+      }
+
+      // Применяем функцию ко всем полям
+      handlePlaceholder(nameField);
+      handlePlaceholder(emailField);
+      handlePlaceholder(textareaField);
+    });
+  </script>
 </section>
