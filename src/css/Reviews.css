@@ -131,23 +131,15 @@
 
 @media screen and (min-width: 1280px) {
   .list-section-reviews {
-    padding-bottom: 0px;
-    display: flex;
-    gap: 25px;
     width: 1079px;
-    height: 258px;
+    gap: 25px;
   }
-
   .section-paragraph-reviews-name {
     width: 288px;
   }
-
   .item-section-reviews {
-    display: block;
-    max-width: 343px;
-    height: 258px;
+    width: 343px;
   }
-
   .remove-two {
     display: flex;
   }
