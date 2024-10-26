@@ -6,10 +6,16 @@
     closeModalBtn: document.querySelector('[data-menu-close]'),
     // Додати атрибут data-modal на бекдроп модалки
     modal: document.querySelector('[data-menu]'),
+    menuLinks: document.querySelectorAll('[data-menu] a'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  // Закрытие меню при клике на каждую ссылку
+  refs.menuLinks.forEach(link => {
+    link.addEventListener('click', toggleModal);
+  });
 
   function toggleModal() {
     // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
