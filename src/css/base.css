@@ -22,7 +22,7 @@ button {
   cursor: pointer;
 }
 
-title {
+.title {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.04;
@@ -39,10 +39,10 @@ p {
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 32px;
+  .title {
+    font-size: 64px;
+    line-height: 1;
   }
-
   p {
     font-size: 16px;
     line-height: 1.25;
