@@ -20,9 +20,7 @@
 .vegetables-text {
   font-family: 'Inter Tight', sans-serif;
   max-width: 335px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
+
   text-align: left;
   color: #fbfbfb;
   margin-bottom: 40px;
@@ -81,8 +79,6 @@
 
   .vegetables-text {
     max-width: 626px;
-    font-size: 16px;
-    line-height: 1.25;
     margin-bottom: 50px;
   }
 
