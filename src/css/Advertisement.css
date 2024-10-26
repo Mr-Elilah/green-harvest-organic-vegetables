@@ -1,70 +1,12 @@
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-button {
-  cursor: pointer;
-}
-
-h2 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.04;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
-}
-
-p {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
-
-  color: rgba(4, 3, 6, 0.4);
-}
-
 /*-section advertisement-*/
 
 .advertisement {
-  
   background: #fbfbfb;
   padding-top: 83px;
   padding-bottom: 80px;
 }
 
 .advertisement-container {
-  
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
@@ -96,7 +38,6 @@ p {
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
-
   .advertisement-title {
     background-image: url(../img/advertisement/adv-img-mobile@2x.jpg);
   }
@@ -104,11 +45,9 @@ p {
   .discount-title {
     background-color: #576f35;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
-
   .advertisement {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -127,11 +66,9 @@ p {
     padding-top: 8px;
     padding-left: 16px;
   }
-
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-
   .advertisement-title {
     background-image: url(../img/advertisement/adv-img-tablet@2x.jpg);
   }
@@ -139,15 +76,14 @@ p {
   .discount-title {
     background-color: #576f35;
   }
-
 }
 
 @media only screen and (min-width: 1280px) {
   .advertisement {
-      max-width: 1280px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .advertisement-container {
     max-width: 1280px;
