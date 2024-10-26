@@ -29,6 +29,7 @@
                 placeholder="Full name"
                 pattern="[a-zA-Z0-9]{3,}"
                 title="Має утримувати тільки букви и быть не меньше 3 символів"
+                required
               />
             </div>
           </div>
@@ -42,6 +43,7 @@
                 placeholder="Email"
                 pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
                 title="Введіть коректний Email (наприклад, example@domain.com)"
+                required
               />
             </div>
           </div>
@@ -62,16 +64,25 @@
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcset="/img/yourorder/orderdecktop@1x.jpg 1x, /img/yourorder/orderdecktop@2x.jpg 2x"
+            srcset="
+              /img/yourorder/orderdecktop@1x.jpg 1x,
+              /img/yourorder/orderdecktop@2x.jpg 2x
+            "
           />
           <source
             media="(min-width: 768px)"
-            srcset="/img/yourorder/ordertab@1x.jpg 1x, /img/yourorder/ordertab@2x.jpg 2x"
+            srcset="
+              /img/yourorder/ordertab@1x.jpg 1x,
+              /img/yourorder/ordertab@2x.jpg 2x
+            "
           />
           <img
             class="div-two-image"
             src="/img/yourorder/ordermob@1x.jpg"
-            srcset="/img/yourorder/ordermob@1x.jpg 1x, /img/yourorder/ordermob@2x.jpg 2x"
+            srcset="
+              /img/yourorder/ordermob@1x.jpg 1x,
+              /img/yourorder/ordermob@2x.jpg 2x
+            "
             alt="fresh"
           />
         </picture>
@@ -113,7 +124,7 @@
 
   <!-- Inline script -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       // Получаем поля с id
       const nameField = document.getElementById('name-input');
       const emailField = document.getElementById('email-input');
@@ -121,14 +132,14 @@
 
       // Функция для скрытия и восстановления placeholder
       function handlePlaceholder(field) {
-          field.addEventListener('mouseover', function() {
-              this.setAttribute('data-placeholder', this.placeholder);
-              this.placeholder = '';
-          });
+        field.addEventListener('mouseover', function () {
+          this.setAttribute('data-placeholder', this.placeholder);
+          this.placeholder = '';
+        });
 
-          field.addEventListener('mouseout', function() {
-              this.placeholder = this.getAttribute('data-placeholder');
-          });
+        field.addEventListener('mouseout', function () {
+          this.placeholder = this.getAttribute('data-placeholder');
+        });
       }
 
       // Применяем функцию ко всем полям
