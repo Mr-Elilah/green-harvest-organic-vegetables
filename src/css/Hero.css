@@ -1,16 +1,8 @@
-h1 {
-  margin: 0;
-}
-
 .hero-section {
   background-color: #576f35;
 }
 
-.hero-container {
-  background-color: #576f35;
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
+.hero-section > .container {
   padding: 100px 20px 40px;
 }
 
@@ -60,8 +52,7 @@ h1 {
 
 /*==========TABLET============*/
 @media screen and (min-width: 768px) {
-  .hero-container {
-    max-width: 768px;
+  .hero-section > .container {
     padding: 0 32px;
     padding-top: 122px;
     padding-bottom: 50px;
@@ -104,12 +95,11 @@ h1 {
     margin-right: auto;
   }
 
-  .hero-container {
+  .hero-section > .container {
     max-width: 730px;
     padding-top: 238px;
     padding-left: 100px;
     padding-right: 28px;
-    margin-bottom: 0;
   }
 
   .hero-title {
