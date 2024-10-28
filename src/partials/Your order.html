@@ -11,7 +11,7 @@
         today and start enjoying the best that nature has to offer!
       </p>
     </div>
-    <!-- modal and div -->
+    <!-- modal -->
     <div class="modal-and-div">
       <div class="modal">
         <p class="modal-p">
@@ -28,7 +28,6 @@
                 placeholder="Full name"
                 pattern="[a-zA-Z0-9]{3,}"
                 title="Має утримувати тільки букви и быть не меньше 3 символів"
-                required
               />
             </div>
             <label for="email-input"></label>
@@ -40,7 +39,6 @@
                 placeholder="Email"
                 pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8});"
                 title="Введіть коректний Email (наприклад, example@domain.com)"
-                required
               />
             </div>
             <div class="modal-div-textarea">
@@ -115,28 +113,22 @@
       </div>
     </div>
   </div>
-
   <!-- Inline script -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Получаем поля с id
+    
       const nameField = document.getElementById('name-input');
       const emailField = document.getElementById('email-input');
-      const textareaField = document.getElementById('message-textarea');
-
-      // Функция для скрытия и восстановления placeholder
+      const textareaField = document.getElementById('message-textarea'); 
       function handlePlaceholder(field) {
         field.addEventListener('mouseover', function () {
           this.setAttribute('data-placeholder', this.placeholder);
           this.placeholder = '';
         });
-
         field.addEventListener('mouseout', function () {
           this.placeholder = this.getAttribute('data-placeholder');
         });
       }
-
-      // Применяем функцию ко всем полям
       handlePlaceholder(nameField);
       handlePlaceholder(emailField);
       handlePlaceholder(textareaField);
