@@ -198,6 +198,11 @@ textarea::placeholder {
   color: #fbfbfb;
   text-decoration: none;
 }
+.div-two-li:hover,
+.div-two-li:focus,
+.div-two-li:active {
+  color: rgba(251, 251, 251, 0.5);
+}
 }
 @media screen and (min-width: 375px) {
 .my-section-div {
@@ -391,6 +396,11 @@ textarea::placeholder {
     color: #fbfbfb;
     text-decoration: none;
   }
+.div-two-li:hover,
+.div-two-li:focus,
+.div-two-li:active {
+  color: rgba(251, 251, 251, 0.5);
+}
 }
 @media screen and (min-width: 768px) {
   .my-section {
@@ -430,30 +440,24 @@ textarea::placeholder {
     padding: 16px;
     width: 428px;
     height: 52px;
-    transition: transform 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.6s ease;
   }
 .modal-input:hover,
 .modal-input:focus {
-    width: 438px;
-    padding: 18px;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
   .modal-textarea {
     padding: 16px;
     width: 428px;
     height: 95px;
     resize: none;
-    transition: transform 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.6s ease;
   }
 .modal-textarea:hover,
 .modal-textarea:focus {
-    position: absolute;
-    z-index: 1;
-    width: 430px;
-    padding: 95px;
-  transform: scale(1.2);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
   .modal-div-textarea {
     margin-bottom: 25px;
@@ -488,6 +492,11 @@ textarea::placeholder {
     font-size: 32px;
     line-height: 100%;
   }
+.div-two-li:hover,
+.div-two-li:focus,
+.div-two-li:active {
+  color: rgba(251, 251, 251, 0.5);
+}
 }
 @media screen and (min-width: 1280px) {
   .my-section {
