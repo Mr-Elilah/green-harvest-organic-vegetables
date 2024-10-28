@@ -78,13 +78,15 @@ input::placeholder {
   letter-spacing: -0.02em;
   text-align: left;
   color: #141414;
-  transition: border-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.6s ease;
 }
 .modal-input:hover,
 .modal-input:active,
 .modal-input:focus {
   border-color: #7a3145;
   outline: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 .modal-input:focus:valid,
 .modal-input:valid:focus {
@@ -111,12 +113,15 @@ input::placeholder {
   text-align: left;
   color: #141414;
   resize: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.6s ease;
 }
 .modal-textarea:hover,
 .modal-textarea:active,
 .modal-textarea:focus {
   border-color: #7a3145;
   outline: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 textarea::placeholder {
   font-weight: 500;
@@ -288,14 +293,16 @@ textarea::placeholder {
     letter-spacing: -0.02em;
     text-align: left;
     color: #141414;
-    transition: border-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.6s ease;
   }
-  .modal-input:hover,
-  .modal-input:active,
-  .modal-input:focus {
-    border-color: #7a3145;
-    outline: none;
-  }
+.modal-input:hover,
+.modal-input:active,
+.modal-input:focus {
+  border-color: #7a3145;
+  outline: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
   .modal-input:focus:valid,
   .modal-input:valid:focus {
     border-color: #3cbc81;
@@ -321,12 +328,15 @@ textarea::placeholder {
     color: #141414;
     overflow: auto;
     resize: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.6s ease;
   }
   .modal-textarea:hover,
   .modal-textarea:active,
   .modal-textarea:focus {
     border-color: #7a3145;
     outline: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   }
   .modal-div-textarea {
     margin-bottom: 20px;
