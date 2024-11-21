@@ -56,7 +56,6 @@
 }
 .modal-form {
   max-width: 295px;
-  height: 283px;
 }
 .modal-div-input {
   margin-bottom: 15px;
@@ -82,14 +81,12 @@ input::placeholder {
   transition: box-shadow 0.6s ease;
 }
 .modal-input:hover,
-.modal-input:active,
 .modal-input:focus {
   border-color: #7a3145;
   outline: none;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
-.modal-input:focus:valid,
-.modal-input:valid:focus {
+.modal-input:focus:valid {
   border-color: #3cbc81;
 }
 .modal-input:invalid {
@@ -117,7 +114,6 @@ input::placeholder {
   transition: box-shadow 0.6s ease;
 }
 .modal-textarea:hover,
-.modal-textarea:active,
 .modal-textarea:focus {
   border-color: #7a3145;
   outline: none;
@@ -247,7 +243,6 @@ textarea::placeholder {
   border-radius: 30px;
   padding: 40px 20px;
   width: 335px;
-  height: 533px;
   background-color: #fbfbfb;
 }
 .modal-p {
@@ -297,14 +292,12 @@ textarea::placeholder {
   transition: box-shadow 0.6s ease;
 }
 .modal-input:hover,
-.modal-input:active,
 .modal-input:focus {
   border-color: #7a3145;
   outline: none;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
-.modal-input:focus:valid,
-.modal-input:valid:focus {
+.modal-input:focus:valid {
   border-color: #3cbc81;
 }
 .modal-input:invalid {
@@ -332,7 +325,6 @@ textarea::placeholder {
   transition: box-shadow 0.6s ease;
 }
 .modal-textarea:hover,
-.modal-textarea:active,
 .modal-textarea:focus {
   border-color: #7a3145;
   outline: none;
@@ -345,7 +337,6 @@ textarea::placeholder {
   border-radius: 30px;
   padding: 16px 129px;
   width: 295px;
-  height: 50px;
   background-color: #576f35;
   border: none;
   cursor: pointer;
@@ -365,13 +356,11 @@ textarea::placeholder {
   border-radius: 30px;
   padding: 40px 20px;
   width: 335px;
-  height: 465px;
   background-color: #576f35;
 }
 .div-two-image {
   border-radius: 15px;
   width: 295px;
-  height: 273px;
   background: rgba(20, 20, 20, 0.3);
 }
 .div-two-p {
@@ -387,7 +376,6 @@ textarea::placeholder {
 }
 .div-two-two {
   width: 295px;
-  height: 60px;
 }
 .div-two-ul {
   display: flex;
@@ -475,16 +463,13 @@ textarea::placeholder {
 .modal-button {
   padding: 16px 191px;
   width: 428px;
-  height: 52px;
 }
 .div-two {
   padding: 50px;
   width: 628px;
-  height: 490px;
 }
 .div-two-image {
   width: 528px;
-  height: 273px;
 }
 .div-two-p {
   margin-top: 50px;
@@ -496,7 +481,6 @@ textarea::placeholder {
 }
 .div-two-two {
   width: 492px;
-  height: 32px;
 }
 .div-two-li {
   font-size: 32px;
@@ -537,7 +521,6 @@ textarea::placeholder {
 .modal {
   padding: 50px;
   width: 529px;
-  height: 534px;
   margin-bottom: 0;
 }
 .modal-p {
@@ -563,6 +546,5 @@ textarea::placeholder {
 }
 .div-two-two {
   width: 357px;
-  height: 76px;
 }
 }
